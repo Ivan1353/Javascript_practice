@@ -1,0 +1,8 @@
+var randomWord = function(l) {
+  randomArray = []
+  var alphabet = "abcdefghijklmnopqrstuvwxyz";   
+for (i= 0; i < l; i++) {
+    randomArray.push(alphabet[Math.floor(Math.random()*alphabet.length)])
+    };
+console.log(randomArray.join(""))  
+};
