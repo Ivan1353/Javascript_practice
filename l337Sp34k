@@ -1,0 +1,18 @@
+var l337Sp3ak = function(message) {
+    hackerList = []
+    letters = {'a' : '4',
+              'e': '3',
+               'l': '1',
+               'O': '0',
+               't': '7'
+               };
+    for (i =0; i<message.length; i++) {
+        if (message[i].toLowerCase() in letters) {
+            hackerList.push(letters[message[i]])
+        }
+        else{
+            hackerList.push(message[i])
+        };
+    };
+    return hackerList.join('')
+};
